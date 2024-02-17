@@ -1,0 +1,90 @@
+{
+  "root": true,
+  "extends": [
+    "standard-with-typescript",
+    "next/core-web-vitals",
+    "next"
+  ],
+  "env": {
+    "jest": true
+  },
+  "globals": {
+    "NodeJS": true
+  },
+  "parserOptions": {
+    "project": [
+      "./tsconfig.json"
+    ]
+  },
+  "ignorePatterns": [
+    "_error.js",
+    "*.spec.ts",
+    "**/tests"
+  ],
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "@typescript-eslint/strict-boolean-expression": "off",
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/no-confusing-void-expression": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/restrict-template-expressions": "off",
+    "@typescript-eslint/return-await": "off",
+    "@typescript-eslint/prefer-optional-chain": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/consistent-type-imports": [
+      "off"
+    ],
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/semi": [
+      "off"
+    ],
+    "@typescript-eslint/space-before-function-paren": [
+      "off"
+    ],
+    "@typescript-eslint/member-delimiter-style": [
+      "off"
+    ],
+    "@typescript-eslint/strict-boolean-expressions": [
+      "off"
+    ],
+    "@typescript-eslint/indent": [
+      "off"
+    ],
+    "@typescript-eslint/no-extraneous-class": [
+      "off"
+    ],
+    "@typescript-eslint/brace-style": [
+      "off"
+    ],
+    "@typescript-eslint/consistent-type-assertions": [
+      "off"
+    ],
+    "indent": [
+      "off"
+    ],
+    "comma-dangle": [
+      "off"
+    ],
+    "semi": [
+      "off"
+    ],
+    "no-tabs": [
+      "off"
+    ],
+    "@typescript-eslint/naming-convention": [
+      "off"
+    ],
+    "@typescript-eslint/no-misused-promises": "off",
+    "no-unused-vars": "off",
+    "quote-props": [
+      "error",
+      "consistent-as-needed",
+      {
+        "keywords": false
+      }
+    ],
+    "multiline-ternary": "off"
+  }
+}

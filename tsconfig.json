@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json.schemastore.org/tsconfig",
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register"
+    ]
+  },
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "rootDir": "./src",
+    "outDir": "dist",
+    "target": "ES2021",
+    "lib": [
+      "ES2021"
+    ],
+    "types": [
+      "node",
+      "jest"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "sourceMap": true,
+    "allowJs": true,
+    "removeComments": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@providers/*": [
+        "./core/providers/*"
+      ],
+      "@database/*": [
+        "./database/*"
+      ]
+    }
+  },
+  "include": [
+    "./src",
+    "@types/fastify.d.ts",
+    "@types/nestjs.d.ts",
+  ],
+  "exclude": [
+    ".spec.ts",
+    "node_modules",
+    "dist",
+    ".next"
+  ]
+}

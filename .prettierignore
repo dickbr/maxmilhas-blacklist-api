@@ -1,0 +1,8 @@
+package*.json
+docker-compose.yml
+**/package.json
+**/tsconfig.json
+**/CHANGELOG.md
+**/coverage
+**/README.md
+dist
